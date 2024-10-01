@@ -1,7 +1,18 @@
-class Student:
-    def __init__(self, name22, year22, id22):
-        self.name = name22
-        self.year = year22
-        self.id = id22
+from datetime import datetime
 
-s1 = Student("Adam",2000, "01234")
+
+class Student:
+    def __init__(self, name2, year2, id2):
+        self.name = name2
+        self.year = year2
+        self.id = id2
+
+def c_age(self):
+    currnet_year = datetime.now().year
+    return currnet_year - self.year
+
+
+s1 = Student("Adam", 2000, "012345678")
+
+age = s1.c_age()
+print(age)
